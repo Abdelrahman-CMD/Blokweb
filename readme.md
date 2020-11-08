@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+**Auteur:** -Abdelrahman Ahmed-
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -64,6 +64,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
 
+<img src="images/breakdownschets.jpeg" witdh="375" alt-"omschrijving van de pagina">
 
 
 ## Intake (week 1)
@@ -71,14 +72,24 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je startniveau:** -kies uit zwart, rood óf blauw-
 
+Blauw
+
 **Je focus:** -kies uit responsive óf surface plane-
 
+Responsive
+
 **Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+
+Website: https://www.balr.com/
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
 <img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
 
+<img src="images/ss-balr.com-pagina-1.png" witdh="375" alt-"omschrijving van de pagina">
+
 **Screenshot(s) van de tweede pagina (small screen):**
 
 <img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+<img src="images/ss-balr.com-pagina-2.png" witdh="375" alt-"omschrijving van de pagina">
+
