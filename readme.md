@@ -86,10 +86,10 @@ Website: https://www.balr.com/
 
 <img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
 
-<img src="images/ss-balr.com-pagina-1.png" witdh="375" alt-"omschrijving van de pagina">
+<img src="images/ss-balr.com-pagina-1.png" width="375" alt-"omschrijving van de pagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
 <img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
-<img src="images/ss-balr.com-pagina-2.png" witdh="375" alt-"omschrijving van de pagina">
+<img src="images/ss-balr.com-pagina-2.png" width="375" alt-"omschrijving van de pagina">
 
