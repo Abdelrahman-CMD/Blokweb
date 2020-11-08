@@ -85,7 +85,6 @@ Website: https://www.balr.com/
 **Screenshot(s) van de eerste pagina (small screen):**
 
 <img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
-
 <img src="images/ss-balr.com-pagina-1.png" width="375" alt-"omschrijving van de pagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
