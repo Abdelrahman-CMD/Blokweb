@@ -91,5 +91,5 @@ Website: https://www.balr.com/
 
 <img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
 
-![alt text](https://github.com/Abdelrahman-CMD/Blokweb/images/breakdownschets.jpg" width="375" alt-"omschrijving van de pagina">
+![alt text](https://github.com/Abdelrahman-CMD/Blokweb/images/breakdownschets.jpg)" width="375" alt-"omschrijving van de pagina">
 
