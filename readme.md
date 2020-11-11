@@ -90,5 +90,5 @@ Website: https://www.balr.com/
 **Screenshot(s) van de tweede pagina (small screen):**
 
 <img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
-![alt text](https://github.com/Abdelrahman-CMD/Blokweb/markdown-here/raw/master/src/common/mages/ss-balr.com-pagina-2.png" width="375" alt-"omschrijving van de pagina">
+![alt text](https://github.com/Abdelrahman-CMD/Blokweb/mages/ss-balr.com-pagina-2.png" width="375" alt-"omschrijving van de pagina">
 
