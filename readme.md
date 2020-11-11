@@ -93,3 +93,6 @@ Website: https://www.balr.com/
 
 ![alt text](https://github.com/Abdelrahman-CMD/Blokweb/images/breakdownschets.jpg)" width="375" alt-"omschrijving van de pagina">
 
+![GitHub Logo](/images/breakdownschets.jpg)
+Format: ![Alt Text](url)
+
