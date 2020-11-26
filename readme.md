@@ -25,13 +25,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Voortgang 3 (week 6)
 
 -same as voortgang 1-
-
+Javascript lukt mij niet echt. De oefening op dlo waren tot het tweede blokje te volgen. Daarna ben ik echt in de knoop geraakt. Ik snap JS helemaal niet.
 
 
 ## Voortgang 2 (week 5)
 
 -same as voortgang 1-
-
+De oefeningen op dlo met flex box waren een beetje lastig. Ik raakte steeds in de knoop. Hierdoor heb ik altijd de neiging gehad om na 3 of 4 pogingen de uitwerkingen erbij te pakken. 
 
 
 ## Voortgang 1 (week 3)
@@ -39,6 +39,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ### Stand van zaken
 
 -dit ging goed & dit was lastig-
+Ik heb veel moeite met het toepassen van de juiste css. HTML is nog steeds een beetje verwarrend voor mij.
+
+De breakdownschets ging wel goed tijdens het anaylseren van de BALR website.
 
 **Screenshot(s):**
 

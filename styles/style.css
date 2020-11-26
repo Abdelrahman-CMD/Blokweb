@@ -1,5 +1,81 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: Futura, sans-serif;
+}
+h1{
+    color:white;
+  display: inline-flex;
+}
+.headerfoto{
+    max-width: 100%;
+}
+.balrlogo{
+    justify-content: center;
+    
+}
+
+.logo{
+display: inline;
+justify-content: flex-start;
+}
+header {
+    display: flex;
+    background: black;
+
+}
+
+header .headerlink {
+    text-align: center;
+    display: block;
+    background: black;
+    color: white;
+}
+
+header a {
+    text-align: bottom;
+    display: block;
+    background: black;
+    color: white;
+}
+
+#introtext {
+    text-align: right;
+    background: black;
+    color: white;
+    flex-direction: column;
+}
+.collectie{
+display:flex;
+flex-direction:row;
+}
+.categorie, img{
+    display:flex;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 0.5em;
+}
+h2{
+display: flex;
+justify-content: flex-start;
+padding:1em;    
+}
+    footer a{
+        display:flex;
+        flex-direction: column;
+    
+    }
+    footer a{
+        flex-direction: row;
+
+    }
 }
 
