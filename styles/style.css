@@ -7,75 +7,114 @@
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+}
 
 body {
     font-family: Futura, sans-serif;
-}
-h1{
-    color:white;
-  display: inline-flex;
-}
-.headerfoto{
-    max-width: 100%;
-}
-.balrlogo{
-    justify-content: center;
-    
+
 }
 
-.logo{
-display: inline;
-justify-content: flex-start;
+nav {
+    position: absolute;
+    width: 100%;
 }
-header {
+
+.icons {
     display: flex;
-    background: black;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.balrlogo {
+    width: 20%;
+    height: 100%;
+}
+
+nav img {
+    width: 9%;
+    height: 100%;
+
 
 }
 
-header .headerlink {
-    text-align: center;
-    display: block;
-    background: black;
+h1 {
     color: white;
+    position: static;
+    text-align: center;
+}
+
+#introduction-container {
+    position: absolute;
+    top: 15rem;
+    left: 5rem;
+}
+
+#introtext {
+    font-size: 2em;
+    color: white;
+    line-height: 0.8;
+}
+
+.bijtekst,
+.koopknop {
+    font-size: 0.5em;
+    ;
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    position: absolute;
+}
+
+details {
+    color: white
 }
 
 header a {
     text-align: bottom;
     display: block;
-    background: black;
+
     color: white;
 }
 
-#introtext {
-    text-align: right;
-    background: black;
-    color: white;
-    flex-direction: column;
+.bovenstelink {
+    text-align: center;
+    background: rgb(34, 34, 34)
 }
-.collectie{
-display:flex;
-flex-direction:row;
-}
-.categorie, img{
-    display:flex;
+
+
+.collectie {
+    display: flex;
     flex-direction: row;
-    max-width: 100%;
-    padding: 0.5em;
-}
-h2{
-display: flex;
-justify-content: flex-start;
-padding:1em;    
-}
-    footer a{
-        display:flex;
-        flex-direction: column;
-    
-    }
-    footer a{
-        flex-direction: row;
-
-    }
+    overflow: scroll;
 }
 
+.categorie,
+img {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
+}
+
+footer {
+    background-color: black;
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
