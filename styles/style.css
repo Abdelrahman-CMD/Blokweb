@@ -12,6 +12,7 @@ img {
 }
 
 body {
+
     font-family: Futura, sans-serif;
 
 }
@@ -69,14 +70,6 @@ a {
     text-decoration: none;
 }
 
-ul {
-    position: absolute;
-}
-
-details {
-    color: white
-}
-
 header a {
     text-align: bottom;
     display: block;
@@ -90,23 +83,21 @@ header a {
 }
 
 
-.collectie {
+.carousel {
     display: flex;
-    flex-direction: row;
+  flex-direction: row;
     overflow: scroll;
+    width: 100vw;
+    height: 100%; 
+    
 }
 
-.categorie,
-img {
+
+.categorie{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-h2 {
-    display: flex;
-    justify-content: flex-start;
-    padding: 1em;
-}
 
 footer {
     background-color: black;
