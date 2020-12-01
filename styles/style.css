@@ -84,10 +84,24 @@ header a {
 
 .carousel{
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 40%);
     overflow: scroll;
 list-style-type: none;
 }
+
+.carousel li {
+    width: 100%;
+    }
+    
+    .carousel li h2 {
+    font-size: 0.4rem;
+    font-weight: lighter;
+    }
+    .carousel li p {
+    font-size: 0.4rem;
+    font-weight: lighter:
+    }
+
 .puma
 {
     position: relative;
