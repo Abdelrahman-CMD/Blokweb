@@ -9,6 +9,7 @@
 
 img {
     max-width: 100%;
+   
 }
 
 body {
@@ -20,6 +21,11 @@ body {
 nav {
     position: absolute;
     width: 100%;
+    padding-bottom: 1em;
+}
+
+nav ul {
+    color: white;
 }
 
 nav img {
@@ -33,16 +39,16 @@ nav img {
     flex-direction: row;
     justify-content: space-between;
 }
-.search,.cart{
-    width:6%;
+
+.search,
+.cart {
+    width: 6%;
 }
 
 .balrlogo {
     width: 20%;
     height: 100%;
 }
-
-
 
 h1 {
     color: white;
@@ -89,7 +95,7 @@ header a {
 .carouselsection h3 {
     padding-top: 1.5em;
     padding-left: 1.5em;
-    padding-bottom : 1.0em;
+    padding-bottom: 1.0em;
 }
 
 .carousel {
@@ -145,6 +151,7 @@ header a {
 .categorie {
     display: flex;
     flex-direction: column;
+    list-style-type: none;
 }
 
 
@@ -216,4 +223,96 @@ footer a {
     flex-direction: row;
     justify-content: space-evenly;
     margin: 2em;
+}
+
+@media (min-width:20em) {
+    nav li {
+        display: none;
+    }
+}
+
+@media (min-width:64em) {
+    .headerfoto {
+        background-image: url('/images/emfotobalr.jpg');
+    }
+
+    nav li {
+        display: none;
+    }
+
+    .icons {
+        padding-top: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    .search,
+    .cart {
+        width: 6%;
+    }
+    
+    .balrlogo {
+        width: 10%;
+        height: 100%;
+    }
+
+    #introduction-container {
+        font-size: 1.5em;
+        position: absolute;
+        top: 45rem;
+        left: 25rem;
+    }
+
+    .carouselsection h3 {
+        padding-top: 1.5em;
+        padding-left: 1.5em;
+        padding-bottom: 1.0em;
+    }
+
+    .carousel {
+        display: grid;
+        grid-template-columns: repeat(10, 24%);
+        overflow: scroll;
+        list-style-type: none;
+        padding-left: 1.5em;
+    }
+
+    .carousel li {
+        width: 100%;
+        padding-right: 0.5em;
+    }
+
+    .carousel li h2 {
+        padding-top: 2em;
+        font-size: 0.7rem;
+        font-weight: lighter;
+
+    }
+
+    .carousel li p {
+        font-size: 0.8rem;
+        font-weight: lighter:
+    }
+
+    .categorie {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .categorie h2 {
+        position: relative;
+        text-align: center;
+        top: 10em;
+        color: white;
+        padding: 0%;
+    }
+
+    .categorie img {
+        display: inline-flex;
+        border: 0;
+    }
+
 }
