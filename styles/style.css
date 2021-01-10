@@ -18,10 +18,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-img:nth-of-type(n) {
+img:nth-child(1n+1) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -55,13 +55,13 @@ p:nth-child(1) {
 
 header {
     color: white;
-    background: url(/images/headerfoto.jpg);
+    background: url(images/headerfoto.jpg);
     background-position: center;
     align-items: center;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 95vh;
+    height: 85vh;
 }
 
 .introductie {
@@ -95,7 +95,7 @@ section ul li img:nth-of-type(1) {
 }
 
 section li p:nth-of-type(1) {
-    font-weight:lighter;ssdfg
+    font-weight: lighter;
 }
 
 section ul h2:nth-of-type(1) {
@@ -104,11 +104,12 @@ section ul h2:nth-of-type(1) {
     font-weight: lighter;
 }
 
-section ul:nth-child(odd){
-  display: flex;
-  flex-wrap: wrap;
-  object-fit: cover;
-} 
+section ul:nth-child(odd) {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+}
+
 
 
 #detailpage nav ul {
@@ -121,31 +122,30 @@ section ul:nth-child(odd){
 }
 
 .slider {
-    width: 300px;
+    width: 320px;
     text-align: center;
     overflow: hidden;
 }
 
 #detailpage .slider>a {
-
     display: inline-flex;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: white;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: whitesmoke;
     text-decoration: none;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin: 0 0 0.5rem 0;
+    margin: 0.4rem 0.5rem 0.5rem 0.5rem;
     position: relative;
 }
 
-#detailpage .slider>a:active {
-    top: 1px;
+#detailpage .slides>a:active {
+    color: black;
 }
 
 .slider>a:focus {
-    background: #000;
+    background-color: #000;
 }
 
 
@@ -177,6 +177,10 @@ section ul:nth-child(odd){
     height: 100%;
 }
 
+#detailpage a:nth-child(1n+1) {
+    border-color: yellow;
+}
+
 #detailpage span:nth-of-type(1) {
     font-size: 0.7em;
     color: gray;
@@ -193,6 +197,7 @@ section ul:nth-child(odd){
 #detailpage h2,
 p {
     font-size: 0.7em;
+    padding-top: 1em;
 
 }
 
@@ -215,11 +220,26 @@ p {
 
 #detailpage ul:nth-of-type(3) {
     display: flex;
-flex-grow: initial;
+    flex-grow: initial;
     overflow: scroll;
     list-style-type: none;
     padding-left: 1.5em;
 }
+
+#detailpage div ul form:nth-of-type(1) {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 25%);
+    list-style: none;
+    padding-top: 1em;
+}
+
+#detailpage div ul form input:nth-child(1n+1) {
+    background-color: white;
+    padding: 1em 3em;
+    margin: 0em 0em 1em;
+}
+
 
 footer {
     background-color: black;
@@ -249,11 +269,10 @@ footer a {
 }
 
 .svg {
-    width: 10%;
+    width: 50%;
+    height: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 2em;
-}
-
 }
