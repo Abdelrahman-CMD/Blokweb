@@ -14,35 +14,31 @@ body {
 
 }
 
-.iconen {
+div:nth-child(1) {
     display: flex;
     flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
 }
 
-img:nth-child(1n+1) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 1em;
-    width: 1.3em;
-    height: 100%;
+div:nth-child(1) img {
+    align-items: center;
+    width: 1.3rem;
 }
 
-img:nth-of-type(2) {
+div:nth-of-type(n) img:nth-child(2) {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 1em;
-    margin-left: 4em;
-    width: 5em;
+    width: 4em;
     height: 100%;
+    background: blueviolet;
+    margin-left: 4rem;
 }
 
 div p:nth-of-type(2) {
     color: white;
     text-decoration: underline;
+    background: chartreuse;
 }
 
 p:nth-child(1) {
@@ -51,6 +47,7 @@ p:nth-child(1) {
     padding: 0.5em;
     font-size: 0.7em;
     font-weight: 90;
+    background: chocolate;
 }
 
 header {
@@ -72,7 +69,8 @@ header {
     flex-direction: column;
     font-size: 0.9em;
     height: 80vh;
-    line-height: 3em;
+    line-height: 1.5em;
+
 }
 
 nav ul {
@@ -85,6 +83,22 @@ section ul:nth-of-type(1) {
     overflow: scroll;
     list-style-type: none;
     padding-left: 1.5em;
+}
+
+section:nth-child(3) ul li {
+    display: flex;
+    flex-direction: column;
+
+}
+
+section:nth-child(3) ul li div {
+    position: absolute;
+    text-align: center;
+}
+
+section:nth-child(3) ul li img {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 section ul li img:nth-of-type(1) {
@@ -177,10 +191,6 @@ section ul:nth-child(odd) {
     height: 100%;
 }
 
-#detailpage a:nth-child(1n+1) {
-    border-color: yellow;
-}
-
 #detailpage span:nth-of-type(1) {
     font-size: 0.7em;
     color: gray;
@@ -214,22 +224,20 @@ p {
     display: flex;
     object-fit: cover;
     text-align: center;
+    text-transform: uppercase;
     background: white;
     padding: 1.3em 7em;
 }
 
-#detailpage ul:nth-of-type(3) {
-    display: flex;
-    flex-grow: initial;
-    overflow: scroll;
-    list-style-type: none;
-    padding-left: 1.5em;
+#detailpage div button:nth-of-type(2) img{
+width: 1.3rem;
+background: blue;
 }
 
 #detailpage div ul form:nth-of-type(1) {
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: repeat(3, 25%);
+    grid-template-columns: repeat(3, 15%);
     list-style: none;
     padding-top: 1em;
 }
@@ -239,7 +247,6 @@ p {
     padding: 1em 3em;
     margin: 0em 0em 1em;
 }
-
 
 footer {
     background-color: black;
