@@ -7,52 +7,75 @@
     margin: 0;
 }
 
-
+/* lettertype voor de hele website*/
 body {
-
     font-family: Futura, sans-serif;
-
 }
 
-div:nth-child(1) {
+a {
+    text-decoration: none;
+}
+
+/*bovenste gedeelte van de site met de link naar de aw collection*/
+header p:nth-child(1) {
+    color: white;
+    background-color: rgb(7, 7, 7);
+    font-size: 0.9em;
+    font-weight: 100;
+    text-align: center;
+    padding: 0.4em;
+}
+
+/*navigatie sectie met iconen*/
+nav:nth-of-type(1) div:nth-of-type(1) {
+    margin-top: 1em;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
     justify-content: space-evenly;
 }
 
-div:nth-child(1) img {
+/*Styling van de iconen in de navbar*/
+nav:nth-of-type(1) div:nth-of-type(1) img {
     align-items: center;
     width: 1.3rem;
 }
 
-div:nth-of-type(n) img:nth-child(2) {
-    display: flex;
-    flex-direction: row;
+/*Balr logo styling*/
+.iconen:nth-of-type(1) :nth-child(2) {
     width: 4em;
     height: 100%;
-    background: blueviolet;
     margin-left: 4rem;
 }
 
-div p:nth-of-type(2) {
+/*de nieuwe collectie tekst in de header*/
+div:nth-of-type(1) h1 {
+    color: white;
+    line-height: 1.6rem;
+    font-weight: 900;
+}
+
+/*de nieuwe collectie tekst inde header*/
+div:nth-of-type(1) p:nth-of-type(1) {
+    color: white;
+    line-height: 1rem;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+/*de shopnow tekst*/
+div:nth-of-type(1) p:nth-of-type(2) {
     color: white;
     text-decoration: underline;
-    background: chartreuse;
+    font-weight: 900;
+    margin-top: 0.5em;
+    font-size: 1em;
 }
 
-p:nth-child(1) {
-    color: white;
-    background-color: rgb(33, 33, 33);
-    padding: 0.5em;
-    font-size: 0.7em;
-    font-weight: 90;
-    background: chocolate;
-}
-
+/*dit is de styling voor de header en background foto*/
 header {
     color: white;
-    background: url(/images/headerfoto.jpg);
+    background: url(../images/headerfoto.jpg);
     background-position: center;
     align-items: center;
     text-align: center;
@@ -61,68 +84,274 @@ header {
     height: 85vh;
 }
 
-.introductie {
+/*Styling voor de tekst op de foto in de header*/
+header div:last-child {
     display: flex;
     text-align: center;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     font-size: 0.9em;
     height: 80vh;
     line-height: 1.5em;
-
 }
 
+/* dit is code om de un-orderd list te stylen*/
 nav ul {
-    display: none;
+   text-align: left;
+   margin-top: 2rem;
+   margin-left: 1rem;
+   list-style-type: none;
+   font-weight: 100;
+   font-size: 2em;
 }
 
-section ul:nth-of-type(1) {
+
+/*Titel van section met items*/
+section:nth-of-type(1) h3 {
+    padding-top: 1rem;
+    padding-left: 1.3rem;
+    padding-bottom: 1rem;
+    font-weight: 100;
+}
+
+/* Carousel gedeelte met kledingitems*/
+section:nth-of-type(1) ul:nth-of-type(1) {
     display: grid;
-    grid-template-columns: repeat(10, 60%);
+    grid-template-columns: repeat(10, 80%);
     overflow: scroll;
     list-style-type: none;
     padding-left: 1.5em;
 }
 
-section:nth-child(3) ul li {
-    display: flex;
-    flex-direction: column;
-
-}
-
-section:nth-child(3) ul li div {
-    position: absolute;
-    text-align: center;
-}
-
-section:nth-child(3) ul li img {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section ul li img:nth-of-type(1) {
+/*styling voor de foto grootte en de ruimte er tussen*/
+section:nth-of-type(1) ul:nth-of-type(1) li img {
     width: 100%;
     height: auto;
     padding-right: 0.5em;
     list-style-type: none;
 }
 
-section li p:nth-of-type(1) {
-    font-weight: lighter;
+/*styling van de bedragen onder de titels van de jassen*/
+section:nth-of-type(1) li p:nth-of-type(1) {
+    font-weight: 100;
 }
 
-section ul h2:nth-of-type(1) {
+/*styling van de titels van de kleding items*/
+section:nth-of-type(1) ul h2:nth-of-type(1) {
     padding-top: 2em;
     font-size: 0.7rem;
     font-weight: lighter;
 }
 
-section ul:nth-child(odd) {
-    display: flex;
-    flex-wrap: wrap;
-    object-fit: cover;
+/*section 2 styling van de foto*/
+section:nth-of-type(2) img {
+    padding-top: 2rem;
+    object-position: -10.5em;
+    width: 275%;
 }
+
+/*section 2 div relative maken om de tekst absolute er boven op te zetten*/
+section:nth-of-type(2) div:nth-of-type(1) {
+    position: relative;
+    width: 100%;
+}
+
+/* de h2 styling in de div van de 2e sectie */
+section:nth-of-type(2) div:nth-of-type(1) h2 {
+    position: absolute;
+    width: 100%;
+    top: 13rem;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+/* de p styling in de div van de 2e sectie */
+section:nth-of-type(2) div:nth-of-type(1) p {
+    position: absolute;
+    width: 100%;
+    top: 15rem;
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-decoration: underline;
+    font-size: 0.9em;
+}
+
+/* sectie 3 styling de sectie een beetje naar beneden gehaald, omdat de scaling het omhoog ging plaatsen*/
+
+section:nth-of-type(3) {
+    margin-top: 2.2em;
+}
+
+/* sectie 3 styling van de foto dat het de hele breedte dekt en een inzoom om overeen te komen met de echte site*/
+
+section:nth-of-type(3) ul img {
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+}
+
+/* sectie 3 styling die ervoor zorgt dat ik tekst boven op de foto kan plaatsen*/
+
+section:nth-of-type(3) ul div {
+    position: relative;
+}
+
+/* sectie 3 styling van de kop van elke categorie */
+section:nth-of-type(3) ul div h2 {
+    position: absolute;
+    text-align: center;
+    top: -6em;
+    width: 100%;
+    color: #ffffff;
+    font-size: 2.5em;
+}
+
+/* sectie 3 styling van de kop van elke categorie */
+section:nth-of-type(3) ul div p:nth-of-type(1) {
+    position: absolute;
+    width: 100%;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    top: -12em;
+    text-decoration: underline;
+}
+
+/* sectie 4 styling van de video en foto die te zien is voordat de video afspeelt */
+
+section:nth-of-type(4) video {
+    width: 100%;
+    background-image: url(../images/headerfoto.jpg);
+    object-fit: cover;
+    height: 80vh;
+}
+
+/* sectie 5 styling van de hoogte en kleur */
+
+section:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background: rgb(230, 230, 230);
+    padding-top: 2em;
+
+}
+
+section:nth-of-type(5) p {
+    line-height: 4em;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: rgb(152, 152, 152);
+}
+
+section:nth-of-type(5) h3 {
+    font-weight: 100;
+    font-size: 1.6em;
+}
+
+section:nth-of-type(5) input:nth-of-type(1) {
+    height: 4.5em;
+    width: 16em;
+    text-align: left;
+    padding-left: 1em;
+    margin-right: -1em;
+}
+
+section:nth-of-type(5) input:nth-of-type(2) {
+    background: black;
+    color: white;
+    height: 4.5em;
+    width: 4.5em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 7, 7);
+    line-height: 2em;
+    font-weight: 100;
+}
+
+footer div:nth-of-type(1) {
+    margin-left: 1em;
+    display: block;
+    column-count: 2;
+    margin-top: 1em;
+}
+
+footer div:nth-of-type(2) {
+    margin-left: 1em;
+    display: block;
+    column-count: 2;
+}
+
+footer div:nth-of-type(3) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ 
+}
+
+footer button {
+    text-align: center;
+    padding: 1em 2em 1em 2em;
+    margin: 1em;
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+
+footer h3 {
+    margin-top: 1em;
+    margin-left: 1em;
+    color: white;
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-weight: lighter;
+}
+
+footer div img {
+    margin-top: 2em;
+    width: 10%;
+}
+
+footer p:nth-of-type(1) {
+    height: 10vh;
+    color: white;
+    margin-top: 15em;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -226,12 +455,11 @@ p {
     text-align: center;
     text-transform: uppercase;
     background: white;
-    padding: 1.3em 7em;
+    padding: 1.3em 5.3em;
 }
 
-#detailpage div button:nth-of-type(2) img{
-width: 1.3rem;
-background: blue;
+#detailpage div button:nth-of-type(2) img {
+    width: 1.3rem;
 }
 
 #detailpage div ul form:nth-of-type(1) {
@@ -248,32 +476,6 @@ background: blue;
     margin: 0em 0em 1em;
 }
 
-footer {
-    background-color: black;
-}
-
-footer h3 {
-    text-align: left;
-}
-
-footer button {
-    display: block;
-    text-align: center;
-    justify-content: center;
-    padding: 1em 7em;
-    margin: 1em 2em;
-    color: white;
-    background-color: black;
-    border-color: white;
-}
-
-footer a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    font-weight: lighter;
-}
 
 .svg {
     width: 50%;
@@ -282,4 +484,47 @@ footer a {
     flex-direction: row;
     justify-content: space-between;
     margin: 2em;
+}
+
+nav#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    transform: translateY(-100%);
+    transition: 500ms ease;
+}
+
+nav#menu.show {
+    transform: translateY(0);
+}
+
+nav#menu ul li {
+    Color: white;
+   }
+
+#detailpage nav#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    transform: translateY(-100%);
+    transition: 500ms ease;
+}
+
+#detailpage nav#menu.show {
+    transform: translateY(0);
+}
+
+#detailpage div:nth-of-type(1) {
+    margin-top: 1em;
+}
+
+
+#detailpage img#hart.vullen {
+    transform: translate(0)
 }
