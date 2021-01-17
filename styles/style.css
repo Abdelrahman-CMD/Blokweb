@@ -154,6 +154,7 @@ section:nth-of-type(2) img {
 section:nth-of-type(2) div:nth-of-type(1) {
     position: relative;
     width: 100%;
+    overflow:hidden;
 }
 
 /* de h2 styling in de div van de 2e sectie */
