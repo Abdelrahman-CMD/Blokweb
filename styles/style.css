@@ -97,12 +97,14 @@ header div:last-child {
 
 /* dit is code om de un-orderd list te stylen*/
 nav ul {
-   text-align: left;
-   margin-top: 2rem;
-   margin-left: 1rem;
-   list-style-type: none;
-   font-weight: 100;
-   font-size: 2em;
+    text-align: left;
+    margin-top: 3.5rem;
+    margin-left: 1rem;
+    list-style-type: none;
+    font-weight: 100;
+    font-size: 2em;
+    line-height: 2.6rem;
+    ;
 }
 
 
@@ -154,7 +156,7 @@ section:nth-of-type(2) img {
 section:nth-of-type(2) div:nth-of-type(1) {
     position: relative;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 /* de h2 styling in de div van de 2e sectie */
@@ -183,7 +185,7 @@ section:nth-of-type(2) div:nth-of-type(1) p {
 /* sectie 3 styling de sectie een beetje naar beneden gehaald, omdat de scaling het omhoog ging plaatsen*/
 
 section:nth-of-type(3) {
-    margin-top: 2.2em;
+    margin-top: 1.2em;
 }
 
 /* sectie 3 styling van de foto dat het de hele breedte dekt en een inzoom om overeen te komen met de echte site*/
@@ -243,6 +245,15 @@ section:nth-of-type(5) {
 
 }
 
+/* styling van de kop van sectie 5 */
+
+section:nth-of-type(5) h3 {
+    font-weight: 100;
+    font-size: 1.6em;
+}
+
+/* sectie 5 styling van de tekst in de tekstvak */
+
 section:nth-of-type(5) p {
     line-height: 4em;
     font-weight: 100;
@@ -250,10 +261,7 @@ section:nth-of-type(5) p {
     color: rgb(152, 152, 152);
 }
 
-section:nth-of-type(5) h3 {
-    font-weight: 100;
-    font-size: 1.6em;
-}
+/* sectie 5 styling van de grootte van de tekstvak*/
 
 section:nth-of-type(5) input:nth-of-type(1) {
     height: 4.5em;
@@ -263,12 +271,16 @@ section:nth-of-type(5) input:nth-of-type(1) {
     margin-right: -1em;
 }
 
+/* sectie 5 styling van de grootte en kleur van de sumbit knop */
+
 section:nth-of-type(5) input:nth-of-type(2) {
     background: black;
     color: white;
     height: 4.5em;
     width: 4.5em;
 }
+
+/* sectie 5 styling van de kleur en layout van de footer */
 
 footer {
     display: flex;
@@ -278,6 +290,8 @@ footer {
     font-weight: 100;
 }
 
+/* sectie 5 styling van de eerste groep links naar 2 kolommen */
+
 footer div:nth-of-type(1) {
     margin-left: 1em;
     display: block;
@@ -285,20 +299,23 @@ footer div:nth-of-type(1) {
     margin-top: 1em;
 }
 
+/* sectie 5 styling van de tweede groep links naar 2 kolommen */
 footer div:nth-of-type(2) {
     margin-left: 1em;
     display: block;
     column-count: 2;
 }
 
+/* sectie 5 styling van de eerste groep iconen onderaan de site */
 footer div:nth-of-type(3) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
- 
+
 }
 
+/* sectie 5 styling van de 2 knoppen in de footer*/
 footer button {
     text-align: center;
     padding: 1em 2em 1em 2em;
@@ -308,12 +325,14 @@ footer button {
     border-color: white;
 }
 
+/* sectie 5 styling van de koppen in de footer */
 footer h3 {
     margin-top: 1em;
     margin-left: 1em;
     color: white;
 }
 
+/* sectie 5 styling van de hyperlinks in de kolommen */
 footer a {
     display: flex;
     flex-direction: column;
@@ -322,55 +341,45 @@ footer a {
     font-weight: lighter;
 }
 
+/* sectie 5 styling van de grootte van de iconen en afstand tussen de vorige element*/
 footer div img {
     margin-top: 2em;
     width: 10%;
 }
 
+/* sectie 5 styling van de laatste regel onderaan de website */
 footer p:nth-of-type(1) {
     height: 10vh;
     color: white;
-    margin-top: 15em;
+    margin-top: 10em;
     text-align: center;
-
 }
 
 
 
+/* Styling voor de detailpagina*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* styling voor de navigatie om de ul niet te laten zien en alleen de nav logo*/
 
 #detailpage nav ul {
     display: none;
 }
 
+/* Styling voor de hoogte van de header */
 #detailpage header {
     background-image: none;
-    height: 25vh;
+    height: 15vh;
 }
 
+/* styling van de slider */
 .slider {
     width: 320px;
     text-align: center;
     overflow: hidden;
+
 }
 
+/* sectie 5 styling van de navigatie bolletjes voor de caroussel */
 #detailpage .slider>a {
     display: inline-flex;
     width: 0.7rem;
@@ -384,34 +393,31 @@ footer p:nth-of-type(1) {
     position: relative;
 }
 
+/* styling van de navigatie bol als het geactiveerd word*/
 #detailpage .slides>a:active {
     color: black;
 }
 
-.slider>a:focus {
-    background-color: #000;
-}
-
-
+/* styling van de scroll van de carousel*/
 #detailpage .slides {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
 }
 
 #detailpage .slides>div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 568px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* styling van de foto in de carousel*/
 #detailpage .slides img {
     object-fit: cover;
     position: absolute;
@@ -421,70 +427,97 @@ footer p:nth-of-type(1) {
     height: 100%;
 }
 
+/* styling van de eerste woord Jackets*/
+
 #detailpage span:nth-of-type(1) {
     font-size: 0.7em;
     color: gray;
     font-weight: lighter;
-    padding-left: 1em;
+    margin-left: 1em;
 }
+
+/* styling van de tweede woord Men*/
 
 #detailpage span:nth-of-type(2) {
     font-size: 0.7em;
-    font-weight: lighter;
-
+    font-weight: 100;
 }
 
-#detailpage h2,
-p {
+/* styling van de positie van de eerste section en de h2 qua grootte*/
+
+#detailpage section:nth-of-type(1) {
     font-size: 0.7em;
-    padding-top: 1em;
-
+    margin-top: 1.5em;
+    text-align: left;
+    margin-left: 1em;
+    font-size: 0.6em;
 }
 
-#detailpage div button:nth-of-type(1) {
-    background: black;
-    color: white;
-    padding: 1.3em 7em;
-    margin: 1em;
+/* styling van de prijs in de eerste section */
+
+#detailpage section:nth-of-type(1) p {
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-top: 0.8em;
 }
 
-
-#detailpage div button:nth-of-type(2) {
-    margin: 1em;
-    display: flex;
-    object-fit: cover;
-    text-align: center;
-    text-transform: uppercase;
-    background: white;
-    padding: 1.3em 5.3em;
+/* styling van bovenkant hoogte van de 2e sectie */
+#detailpage section:nth-of-type(2) {
+    margin-top: 1.5em;
 }
 
-#detailpage div button:nth-of-type(2) img {
-    width: 1.3rem;
+/* styling van de 2e sectie p */
+#detailpage section:nth-of-type(2) p {
+    margin-left: 1em;
+    margin-bottom: 0.6em;
+    font-size: 0.8em;
+    font-weight: 100;
+    margin-top: 0.3em;
 }
 
-#detailpage div ul form:nth-of-type(1) {
+/* styling van de size labels kolommen */
+#detailpage section:nth-of-type(2) form {
     display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: repeat(3, 15%);
-    list-style: none;
-    padding-top: 1em;
+    grid-template-columns: 6.25em 6.25em 6.25em;
+    column-gap: 0.625em;
 }
 
-#detailpage div ul form input:nth-child(1n+1) {
-    background-color: white;
-    padding: 1em 3em;
-    margin: 0em 0em 1em;
+/* styling van de uiterlijk van de size knoppen*/
+#detailpage section:nth-of-type(2) form input {
+    background: white;
+    color: black;
+    padding: 1.3em;
+    margin: 1em;
 }
 
+/* styling van de sectie in display flex zodat de knoppen onder elkaar komen*/
 
-.svg {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 2em;
+#detailpage section:nth-of-type(3){
+   display: flex;
+   flex-direction: column;
+}
+/* styling van de uiterlijk van de add to cart knop*/
+
+#detailpage section:nth-of-type(3) button:nth-of-type(1){
+    background: black;
+    color:white;
+    padding: 1em 4em;
+    margin: 1em;
+}
+/* styling van de uiterlijk van add to wishlist knop*/
+
+#detailpage section:nth-of-type(3) button:nth-of-type(2){
+    background: white;
+    color: black;
+    padding: 1em 4em;
+    margin: 1em;
+}
+
+/* styling van de uiterlijk van de hart img*/
+
+#detailpage section:nth-of-type(3) button:nth-of-type(2) img {
+margin-left: 1em;
+    width: 8%;
 }
 
 nav#menu {
@@ -504,7 +537,7 @@ nav#menu.show {
 
 nav#menu ul li {
     Color: white;
-   }
+}
 
 #detailpage nav#menu {
     position: fixed;
