@@ -10,8 +10,20 @@ function hideMenu() {
 document.querySelector("#menubutton").addEventListener("click", showMenu);
 document.querySelector("nav#menu").addEventListener("click", hideMenu);
 
-function hartVullen() {
-  document.querySelector("img#hart").classList.add('vullen');
-}
+let wishListKnop = document.querySelector("button#wishlist")
 
-document.querySelector("img#hart").toggle("click", hartVullen);
+console.log(wishListKnop)
+wishListKnop.addEventListener("click", wishlistKlik)
+
+function wishlistKlik() {
+  let hartImg = wishListKnop.querySelector("img#hart")
+  console.log("Clicked on the add wishlist button")
+  if(hartImg.getAttribute("data-filled") === "false") {
+    hartImg.src = "./images/heartfilled-svgrepo-com.svg"
+    hartImg.setAttribute("data-filled", "true")
+  } else {
+    hartImg.setAttribute("data-filled", "false")
+    hartImg.src = "./images/heart-svgrepo-com.svg"
+  }
+  console.log(hartImg.src)
+}
