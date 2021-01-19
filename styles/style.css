@@ -147,10 +147,10 @@ section:nth-of-type(1) ul h2:nth-of-type(1) {
 }
 
 /*section 2 styling van de foto*/
-section:nth-of-type(2) img {
-    padding-top: 2rem;
-    object-position: -10.5em;
-    width: 275%;
+section:nth-of-type(2) div:nth-of-type(1) img:nth-of-type(1) {
+padding-top: 2em;
+padding-bottom: 1em;
+width: 270%;
 }
 
 /*section 2 div relative maken om de tekst absolute er boven op te zetten*/
@@ -240,7 +240,7 @@ section:nth-of-type(5) {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 40vh;
+    padding-bottom: 2em;
     background: rgb(230, 230, 230);
     padding-top: 2em;
 
@@ -496,7 +496,7 @@ footer p:nth-of-type(1) {
 }
 
 /* styling van de 2e sectie p */
-#detailpage section:nth-of-type(2) p {
+#detailpage section:nth-of-type(2) h3 {
     margin-left: 1em;
     margin-bottom: 0.6em;
     font-size: 0.8em;
@@ -521,14 +521,14 @@ footer p:nth-of-type(1) {
 
 /* styling van de sectie in display flex zodat de knoppen onder elkaar komen*/
 
-#detailpage section:nth-of-type(3) {
+#detailpage section:nth-of-type(2) {
     display: flex;
     flex-direction: column;
 }
 
 /* styling van de uiterlijk van de add to cart knop*/
 
-#detailpage section:nth-of-type(3) button:nth-of-type(1) {
+#detailpage section:nth-of-type(2) button:nth-of-type(1) {
     background: black;
     color: white;
     padding: 1em 4em;
@@ -537,28 +537,58 @@ footer p:nth-of-type(1) {
 
 /* styling van de uiterlijk van add to wishlist knop*/
 
-#detailpage section:nth-of-type(3) button:nth-of-type(2) {
+#detailpage section:nth-of-type(2) button:nth-of-type(2) {
     background: white;
     color: black;
-    padding: 1em 4em;
+    padding: 1em 1em 1em 1em;
     margin: 1em;
 }
 
 /* styling van de uiterlijk van de hart img */
 
-#detailpage section:nth-of-type(3) button:nth-of-type(2) img {
-    margin-left: 1em;
-    width: 8%;
+#detailpage section:nth-of-type(2) button:nth-of-type(2) img:nth-of-type(1) {
+   width: 5%;
 }
+
+#detailpage section:nth-of-type(3){
+    text-align: center;
+} 
+
+#detailpage section:nth-of-type(3) h3:nth-of-type(1){
+    margin: 3em;
+    font-size: 0.9em;
+    font-weight: lighter;
+    line-height: 2em;
+} 
 
 /* styling van de tekst in de 4e sectie */
 
 #detailpage section:nth-of-type(4) {
-    text-align: center;
-    font-size: 1em;
+    text-align: left;
+    font-size: 0.8em;
     line-height: 3ch;
     font-size: 0.8em;
-    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: lighter;
+    width: 85%;
+    margin: 0 auto;
+
+}
+
+/* styling van de tekst in de 4e sectie */
+
+#detailpage section:nth-of-type(4) p:nth-of-type(1) {
+    margin-bottom: 2em;
+}
+
+/* styling van de tekst in de 4e sectie */
+
+#detailpage section:nth-of-type(4) p:nth-of-type(3) {
+    margin-right: 4em;
+}
+#detailpage section:nth-of-type(4) p:nth-of-type(3) a:nth-of-type(1){
+   color: black;
 }
 
 /* styling van de lijn tussen de 2 secties */
@@ -568,54 +598,76 @@ footer p:nth-of-type(1) {
     margin: 0 auto;
 }
 
-/* styling van de achtergrond van de sectie*/
+/* styling van de achtergrond van de sectie. ik heb een id gebruikt omdat met pseudo de styling van mijn index.html ging overlappen*/
 
-#detailpage section:nth-of-type(5) {
+#detailpage section:nth-of-type(5){
+    line-height: 3ch;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: lighter;
+    margin: 0 auto;
     background: white;
-    text-align: left;
 }
 
 /* de h4 kop moet naar rechts*/
 
-#detailpage section:nth-of-type(5) #description {
-    text-align: left;
-margin-bottom: 0.5em;
-}
-
-/* styling van de tekst na de kop in sectie 5*/
-#detailpage section:nth-of-type(5) p {
-    width: 90%;
-    line-height: 3ch;
-    color: black;
-    font-weight: 100;
-}
-
-/* styling van de iconen in secite 8*/
-#detailpage section:nth-of-type(8) div {
+#detailpage section:nth-of-type(5) div:nth-of-type(1) {
     display: flex;
-    column-gap: 2em;
-    align-items: flex-end;
-    margin-bottom: 2em;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%; 
 }
-#detailpage section:nth-of-type(8) div p {
+#detailpage section:nth-of-type(5) div:nth-of-type(1) h3 {
+    font-size: 0.8em;
+   text-transform: uppercase;
+   width: 70%;
+}
+
+#detailpage section:nth-of-type(5) div:nth-of-type(1) button {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    border-color: lightblue;
+    background:white;
+}
+#detailpage section:nth-of-type(5) li{
+list-style-type: none;
+padding-left: 2em;
+font-size:0.8em;
+color: black;
+}
+#detailpage section:nth-of-type(5) li a{
+list-style-type: none;
+font-size:1em;
+color: black;
+}
+
+#detailpage section:nth-of-type(6) div {
+    display: flex;
+    justify-content: space-between;
+    margin-top:1em;
+    margin-bottom: 1em;
+    width: 92%;
+}
+
+#detailpage section:nth-of-type(6) div p {
     font-weight: 100;
-    font-size: 0.75em;
+    font-size: 0.8em;
     color: black;
-    padding-right: 5.5em;
-}
+    margin-left: 1em;
+    padding: 1em;
+} 
 
 /* styling van de grootte van de iconen in sectie 8*/
 
-#detailpage section:nth-of-type(8) div img {
-display: flex;
- width: 6%;
- 
+#detailpage section:nth-of-type(6) div img {
+ width: 6.5%;
 }
 
 /* styling van de h3 in sectie 9*/
 
 
-#detailpage section:nth-of-type(9) h3 {
+#detailpage section:nth-of-type(7) h3 {
     text-align: center;
     font-weight: 100;
     margin-bottom: 1em;
@@ -625,7 +677,7 @@ display: flex;
 /* styling van de kleding items naar 2 rijen met een grootte van 50 procent*/
 
 
-#detailpage section:nth-of-type(9) ul:nth-of-type(1) {
+#detailpage section:nth-of-type(7) ul:nth-of-type(1) {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     list-style-type: none;
@@ -634,17 +686,18 @@ display: flex;
 /* styling van de grootte van de fotos in de list items in sectie 9*/
 
 
-#detailpage section:nth-of-type(9) ul:nth-of-type(1) li img {
+#detailpage section:nth-of-type(7) ul:nth-of-type(1) li img {
     width: 100%;
     height: auto;
-    padding-right: 0.7em;
+    padding: 0em 1em 0em 1em;
     list-style-type: none;
 }
 
 /* styling van tekst die hoort bij de list items in sectie 9*/
 
-#detailpage section:nth-of-type(9) ul h2 {
+#detailpage section:nth-of-type(7) ul h2 {
     padding-top: 2em;
+    padding-left: 2em;
     font-size: 0.7rem;
     font-weight: lighter;
 
@@ -653,16 +706,17 @@ display: flex;
 /* styling van tekst die hoort bij de list items in sectie 9*/
 
 
-#detailpage section:nth-of-type(9) ul p {
+#detailpage section:nth-of-type(7) ul p {
     padding-top: 1em;
     padding-bottom: 2em;
+    padding-left: 2em;
     font-size: 0.8rem;
     font-weight: lighter;
 }
 
 /* styling van de h3 kop van sectie 10*/
 
-#detailpage section:nth-of-type(10) h3 {
+#detailpage section:nth-of-type(8) h3 {
     text-align: center;
     font-weight: 100;
     margin-bottom: 1em;
@@ -671,7 +725,7 @@ display: flex;
 /* styling van de kleding items naar 2 rijen met een grootte van 50 procent*/
 
 
-#detailpage section:nth-of-type(10) ul:nth-of-type(1) {
+#detailpage section:nth-of-type(8) ul:nth-of-type(1) {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     list-style-type: none;
@@ -680,18 +734,19 @@ display: flex;
 /* styling van de grootte van de fotos in de list items in sectie 9*/
 
 
-#detailpage section:nth-of-type(10) ul:nth-of-type(1) li img {
+#detailpage section:nth-of-type(8) ul:nth-of-type(1) li img {
     width: 100%;
     height: auto;
-    padding-right: 0.7em;
+    padding: 0em 1em 0em 1em;
     list-style-type: none;
 }
 
 /* styling van tekst die hoort bij de list items in sectie 9*/
 
 
-#detailpage section:nth-of-type(10) ul h2 {
+#detailpage section:nth-of-type(8) ul h2 {
     padding-top: 2em;
+    padding-left: 2em;
     font-size: 0.7rem;
     font-weight: lighter;
 
@@ -700,8 +755,9 @@ display: flex;
 /* styling van tekst die hoort bij de list items in sectie 9*/
 
 
-#detailpage section:nth-of-type(10) ul p {
+#detailpage section:nth-of-type(8) ul p {
     padding-top: 1em;
+    padding-left: 2em;
     padding-bottom: 2em;
     font-size: 0.8rem;
     font-weight: lighter;
@@ -710,7 +766,7 @@ display: flex;
 /* sectie 11 styling van de hoogte en kleur */
 
 
-#detailpage section:nth-of-type(11) {
+#detailpage section:nth-of-type(9) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -723,14 +779,14 @@ display: flex;
 
 /* styling van de kop van sectie 11 */
 
-#detailpage section:nth-of-type(11) h3 {
+#detailpage section:nth-of-type(9) h3 {
     font-weight: 100;
     font-size: 1.6em;
 }
 
 /* sectie 11 styling van de tekst in de tekstvak */
 
-#detailpage section:nth-of-type(11) p:nth-of-type(1) {
+#detailpage section:nth-of-type(9) p:nth-of-type(1) {
     line-height: 4em;
     font-weight: 100;
     font-size: 0.8em;
@@ -739,7 +795,7 @@ display: flex;
 
 /* sectie 11 styling van de grootte van de tekstvak*/
 
-#detailpage section:nth-of-type(11) input:nth-of-type(1) {
+#detailpage section:nth-of-type(9) input:nth-of-type(1) {
     height: 4.5em;
     width: 16em;
     text-align: left;
@@ -749,7 +805,7 @@ display: flex;
 
 /* sectie 11 styling van de grootte en kleur van de sumbit knop */
 
-#detailpage section:nth-of-type(11) input:nth-of-type(2) {
+#detailpage section:nth-of-type(9) input:nth-of-type(2) {
     background: black;
     color: white;
     height: 4.5em;
