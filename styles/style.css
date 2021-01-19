@@ -913,6 +913,14 @@ nav#menu.show {
 nav#menu ul li {
     Color: white;
 }
+ul#dropdown-text.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+}
+
+
 
 
 
