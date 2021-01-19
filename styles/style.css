@@ -40,12 +40,24 @@ nav:nth-of-type(1) div:nth-of-type(1) img {
     align-items: center;
     width: 1.3rem;
 }
+/*Styling van BALR icon*/
+nav:nth-of-type(1) div:nth-of-type(1) img:nth-of-type(2) {
+    align-items: center;
+    width: 5.3rem;
+    margin-left: 3.7rem;
+}
 
-/*Balr logo styling*/
-.iconen:nth-of-type(1) :nth-child(2) {
-    width: 4em;
-    height: 100%;
-    margin-left: 4rem;
+
+/* dit is code om de un-orderd list te stylen*/
+nav ul {
+    text-align: left;
+    margin-top: 3.5rem;
+    margin-left: 1rem;
+    list-style-type: none;
+    font-weight: 100;
+    font-size: 2em;
+    line-height: 2.6rem;
+    ;
 }
 
 /*de nieuwe collectie tekst in de header*/
@@ -95,17 +107,6 @@ header div:last-child {
     line-height: 1.5em;
 }
 
-/* dit is code om de un-orderd list te stylen*/
-nav ul {
-    text-align: left;
-    margin-top: 3.5rem;
-    margin-left: 1rem;
-    list-style-type: none;
-    font-weight: 100;
-    font-size: 2em;
-    line-height: 2.6rem;
-    ;
-}
 
 
 /*Titel van section met items*/
@@ -359,16 +360,45 @@ footer p:nth-of-type(1) {
 
 /* ---------------Styling voor de detailpagina---------------*/
 
-/* styling voor de navigatie om de ul niet te laten zien en alleen de nav logo*/
 
-#detailpage nav ul {
-    display: none;
-}
 
 /* Styling voor de hoogte van de header */
 #detailpage header {
     background-image: none;
-    height: 15vh;
+    height: 19vh;
+}
+
+/*navigatie sectie met iconen*/
+#detailpage nav:nth-of-type(1) div:nth-of-type(1) {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*Styling van de iconen in de navbar*/
+#detailpage nav:nth-of-type(1) div:nth-of-type(1) img {
+    align-items: center;
+    width: 1.3rem;
+}
+/*Styling van BALR icon*/
+#detailpage nav:nth-of-type(1) div:nth-of-type(1) img:nth-of-type(2) {
+    align-items: center;
+    width: 5.3rem;
+    margin-left: 3.7rem;
+}
+
+/* dit is code om de un-orderd list te stylen*/
+#detailpage nav ul {
+    text-align: left;
+    margin-top: 3.5rem;
+    margin-left: 1rem;
+    list-style-type: none;
+    font-weight: 100;
+    font-size: 2em;
+    line-height: 2.6rem;
+    ;
 }
 
 /* styling van de slider */
@@ -390,7 +420,6 @@ footer p:nth-of-type(1) {
     justify-content: center;
     border-radius: 50%;
     margin: 0.4rem 0.5rem 0.5rem 0.5rem;
-    position: relative;
 }
 
 /* styling van de navigatie bol als het geactiveerd word*/
@@ -407,7 +436,7 @@ footer p:nth-of-type(1) {
 }
 
 #detailpage .slides>div {
-    scroll-snap-align: start;
+
     flex-shrink: 0;
     width: 320px;
     height: 568px;
@@ -543,13 +572,14 @@ footer p:nth-of-type(1) {
 
 #detailpage section:nth-of-type(5) {
     background: white;
+    text-align: left;
 }
 
 /* de h4 kop moet naar rechts*/
 
-
-#detailpage section:nth-of-type(5) h3:nth-of-type(1) {
+#detailpage section:nth-of-type(5) #description {
     text-align: left;
+margin-bottom: 0.5em;
 }
 
 /* styling van de tekst na de kop in sectie 5*/
@@ -577,7 +607,7 @@ footer p:nth-of-type(1) {
 /* styling van de grootte van de iconen in sectie 8*/
 
 #detailpage section:nth-of-type(8) div img {
-    display: flex;
+display: flex;
  width: 6%;
  
 }
@@ -612,7 +642,6 @@ footer p:nth-of-type(1) {
 }
 
 /* styling van tekst die hoort bij de list items in sectie 9*/
-
 
 #detailpage section:nth-of-type(9) ul h2 {
     padding-top: 2em;
@@ -804,18 +833,6 @@ footer p:nth-of-type(1) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* stukje code voor de navigatie als deze uitklapt */
 
 
@@ -830,34 +847,15 @@ nav#menu {
     transition: 500ms ease;
 }
 
+/* 2e regel code zorgt ervoordat de dropdown menu niet achter mijn image op de detailpagina komt, maar juist voor de image uitklapt*/
 nav#menu.show {
     transform: translateY(0);
+    z-index: 999999;
 }
 
 nav#menu ul li {
     Color: white;
 }
 
-#detailpage nav#menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: black;
-    transform: translateY(-100%);
-    transition: 500ms ease;
-}
-
-#detailpage nav#menu.show {
-    transform: translateY(0);
-}
-
-#detailpage div:nth-of-type(1) {
-    margin-top: 1em;
-}
 
 
-#detailpage img#hart.vullen {
-    transform: translate(0)
-}
