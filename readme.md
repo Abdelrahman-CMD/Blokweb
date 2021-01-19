@@ -8,7 +8,25 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 1. MDN
 2. CSS-tricks
-3. -...-
+
+Bijgaand alle bronnen die ik gebruikt of deels benut heb als inspiratie heb tijdens het coderen van mijn website
+
+- [https://css-tricks.com/text-blocks-over-image/](https://css-tricks.com/text-blocks-over-image/). **Code voor tekst op een afbeelding**
+- [https://css-tricks.com/zooming-background-images/](https://css-tricks.com/zooming-background-images/) **Code voor het inzoomen op een foto wanneer je er overheen hovert**
+- [https://stackoverflow.com/questions/24293102/how-to-put-a-background-video-loop-on-a-website-html-css](https://stackoverflow.com/questions/24293102/how-to-put-a-background-video-loop-on-a-website-html-css) **Code voor het plaatsen en loopen van een video op je website**
+- [https://stackoverflow.com/questions/17042201/how-to-style-input-and-submit-button-with-css](https://stackoverflow.com/questions/17042201/how-to-style-input-and-submit-button-with-css) **Code voor het stylen van mijn input en sumbit knop met css**
+- [https://www.jotform.com/help/118-how-to-customize-the-submit-button-with-css](https://www.jotform.com/help/118-how-to-customize-the-submit-button-with-css) **Code voor het stylen van mijn submit knop**
+- [https://stackoverflow.com/questions/46986859/how-can-i-put-elements-underneath-each-other-in-flex-display](https://stackoverflow.com/questions/46986859/how-can-i-put-elements-underneath-each-other-in-flex-display) **Code om elementen onder elkaar te krijgen met display flex**
+- [https://css-tricks.com/guide-responsive-friendly-css-columns/](https://css-tricks.com/guide-responsive-friendly-css-columns/) **Code voor responsive css kolommen**
+- [https://css-tricks.com/snippets/css/complete-guide-grid/](https://css-tricks.com/snippets/css/complete-guide-grid/) **Complete grid gids**
+- [https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink) **Code voor flex-shrink**
+- [https://stackoverflow.com/questions/8919682/remove-all-styling-formatting-from-hyperlinks](https://stackoverflow.com/questions/8919682/remove-all-styling-formatting-from-hyperlinks) **Code voor het weglaten van alle standaard styling voor hyperlinks**
+- [https://css-tricks.com/solved-with-css-dropdown-menus/](https://css-tricks.com/solved-with-css-dropdown-menus/) **Code voor dropdown menu**
+- [https://stackoverflow.com/questions/2189452/when-to-use-margin-vs-padding-in-css#:~:text=The margin clears an area,vs margin if you can](https://stackoverflow.com/questions/2189452/when-to-use-margin-vs-padding-in-css#:~:text=The%20margin%20clears%20an%20area,vs%20margin%20if%20you%20can). **Code met toelichting omtrent padding en margin**
+- [https://codepen.io/abdelrahman-cmd/pen/bGwxMgd](https://codepen.io/abdelrahman-cmd/pen/bGwxMgd) **Code voor gebruik van hartje**
+- [https://stackoverflow.com/questions/52493058/dropdown-is-hidden-behind-image](https://stackoverflow.com/questions/52493058/dropdown-is-hidden-behind-image) **Code voor z-index ivm het wijzigen van positie (nav voor de img)**
+- [https://css-tricks.com/almanac/properties/s/scroll-snap-type/](https://css-tricks.com/almanac/properties/s/scroll-snap-type/) **Code omtrent de manier waarop de slider werkt.**
+- [https://freefrontend.com/css-radio-buttons/](https://freefrontend.com/css-radio-buttons/) **Code voor het maken van de size labels**
 
 
 
