@@ -50,6 +50,9 @@ nav:nth-of-type(1) div:nth-of-type(1) img:nth-of-type(2) {
 
 /* dit is code om de un-orderd list te stylen*/
 nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    Justify-content: flex-end;
     margin-right: auto;
     text-align: left;
     margin-left: 1rem;
@@ -392,6 +395,9 @@ footer p:nth-of-type(1) {
 
 /* dit is code om de un-orderd list te stylen*/
 #detailpage nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    Justify-content: flex-end;
     margin-right: auto;
     text-align: left;
     margin-left: 1rem;
@@ -907,17 +913,18 @@ nav#menu {
     transition: 500ms ease;
 }
 
+nav#menu li {
+    display: flex; 
+    width: 100%; 
+    justify-content: space-between;
+}
+
 
 nav#menu img{
     width:7%;
     margin-right: 5%;
 }
 
-nav#menu li {
-    display: flex; 
-    width: 100%; 
-    justify-content: space-between;
-}
 
 /* 2e regel code zorgt ervoordat de dropdown menu niet achter mijn image op de detailpagina komt, maar juist voor de image uitklapt*/
 nav#menu.show {
