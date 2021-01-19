@@ -40,6 +40,7 @@ nav:nth-of-type(1) div:nth-of-type(1) img {
     align-items: center;
     width: 1.3rem;
 }
+
 /*Styling van BALR icon*/
 nav:nth-of-type(1) div:nth-of-type(1) img:nth-of-type(2) {
     align-items: center;
@@ -48,16 +49,9 @@ nav:nth-of-type(1) div:nth-of-type(1) img:nth-of-type(2) {
 }
 
 /* dit is code om de un-orderd list te stylen*/
-nav#menu:nth-of-type(1) img {
-    display: flex;
-    justify-content: flex-end;
-    position; relative;
-    width: 7%;
-}
-/* dit is code om de un-orderd list te stylen*/
 nav ul {
+    margin-right: auto;
     text-align: left;
-    margin-top: 3.5rem;
     margin-left: 1rem;
     list-style-type: none;
     font-weight: 100;
@@ -154,9 +148,9 @@ section:nth-of-type(1) ul h2:nth-of-type(1) {
 
 /*section 2 styling van de foto*/
 section:nth-of-type(2) div:nth-of-type(1) img:nth-of-type(1) {
-padding-top: 2em;
-padding-bottom: 1em;
-width: 270%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    width: 270%;
 }
 
 /*section 2 div relative maken om de tekst absolute er boven op te zetten*/
@@ -388,6 +382,7 @@ footer p:nth-of-type(1) {
     align-items: center;
     width: 1.3rem;
 }
+
 /*Styling van BALR icon*/
 #detailpage nav:nth-of-type(1) div:nth-of-type(1) img:nth-of-type(2) {
     align-items: center;
@@ -553,19 +548,19 @@ footer p:nth-of-type(1) {
 /* styling van de uiterlijk van de hart img */
 
 #detailpage section:nth-of-type(2) button:nth-of-type(2) img:nth-of-type(1) {
-   width: 5%;
+    width: 5%;
 }
 
-#detailpage section:nth-of-type(3){
+#detailpage section:nth-of-type(3) {
     text-align: center;
-} 
+}
 
-#detailpage section:nth-of-type(3) h3:nth-of-type(1){
+#detailpage section:nth-of-type(3) h3:nth-of-type(1) {
     margin: 3em;
     font-size: 0.9em;
     font-weight: lighter;
     line-height: 2em;
-} 
+}
 
 /* styling van de tekst in de 4e sectie */
 
@@ -593,8 +588,9 @@ footer p:nth-of-type(1) {
 #detailpage section:nth-of-type(4) p:nth-of-type(3) {
     margin-right: 4em;
 }
-#detailpage section:nth-of-type(4) p:nth-of-type(3) a:nth-of-type(1){
-   color: black;
+
+#detailpage section:nth-of-type(4) p:nth-of-type(3) a:nth-of-type(1) {
+    color: black;
 }
 
 /* styling van de lijn tussen de 2 secties */
@@ -606,7 +602,7 @@ footer p:nth-of-type(1) {
 
 /* styling van de achtergrond van de sectie. ik heb een id gebruikt omdat met pseudo de styling van mijn index.html ging overlappen*/
 
-#detailpage section:nth-of-type(5){
+#detailpage section:nth-of-type(5) {
     line-height: 3ch;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -621,12 +617,13 @@ footer p:nth-of-type(1) {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 100%; 
+    width: 100%;
 }
+
 #detailpage section:nth-of-type(5) div:nth-of-type(1) h3 {
     font-size: 0.8em;
-   text-transform: uppercase;
-   width: 70%;
+    text-transform: uppercase;
+    width: 70%;
 }
 
 #detailpage section:nth-of-type(5) div:nth-of-type(1) button {
@@ -634,24 +631,26 @@ footer p:nth-of-type(1) {
     width: 2em;
     border-radius: 50%;
     border-color: lightblue;
-    background:white;
+    background: white;
 }
-#detailpage section:nth-of-type(5) li{
-list-style-type: none;
-padding-left: 2em;
-font-size:0.8em;
-color: black;
+
+#detailpage section:nth-of-type(5) li {
+    list-style-type: none;
+    padding-left: 2em;
+    font-size: 0.8em;
+    color: black;
 }
-#detailpage section:nth-of-type(5) li a{
-list-style-type: none;
-font-size:1em;
-color: black;
+
+#detailpage section:nth-of-type(5) li a {
+    list-style-type: none;
+    font-size: 1em;
+    color: black;
 }
 
 #detailpage section:nth-of-type(6) div {
     display: flex;
     justify-content: space-between;
-    margin-top:1em;
+    margin-top: 1em;
     margin-bottom: 1em;
     width: 92%;
 }
@@ -662,12 +661,12 @@ color: black;
     color: black;
     margin-left: 1em;
     padding: 1em;
-} 
+}
 
 /* styling van de grootte van de iconen in sectie 8*/
 
 #detailpage section:nth-of-type(6) div img {
- width: 6.5%;
+    width: 6.5%;
 }
 
 /* styling van de h3 in sectie 9*/
@@ -899,14 +898,30 @@ color: black;
 
 
 nav#menu {
+    display: flex;
+    flex-wrap: wrap;
+    Justify-content: flex-end;
+    position: relative;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: black;
+    background: rgb(21, 21, 21);
     transform: translateY(-100%);
     transition: 500ms ease;
+}
+
+
+nav#menu img{
+    width:7%;
+    margin-right: 5%;
+}
+
+nav#menu li {
+    display: flex; 
+    width: 100%; 
+    justify-content: space-between;
 }
 
 /* 2e regel code zorgt ervoordat de dropdown menu niet achter mijn image op de detailpagina komt, maar juist voor de image uitklapt*/
@@ -918,14 +933,10 @@ nav#menu.show {
 nav#menu ul li {
     Color: white;
 }
+
 ul#dropdown-text.show {
     position: fixed;
     top: 0;
     left: 0;
     transform: translateY(-100%);
 }
-
-
-
-
-
