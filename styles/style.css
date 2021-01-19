@@ -65,6 +65,7 @@ div:nth-of-type(1) h1 {
     color: white;
     line-height: 1.6rem;
     font-weight: 900;
+    margin-bottom: 0.5em;
 }
 
 /*de nieuwe collectie tekst inde header*/
@@ -76,7 +77,7 @@ div:nth-of-type(1) p:nth-of-type(1) {
 }
 
 /*de shopnow tekst*/
-div:nth-of-type(1) p:nth-of-type(2) {
+div:nth-of-type(1) p:nth-of-type(3) {
     color: white;
     text-decoration: underline;
     font-weight: 900;
