@@ -16,6 +16,23 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
 /*bovenste gedeelte van de site met de link naar de aw collection*/
 header p:nth-child(1) {
     color: white;
@@ -74,8 +91,8 @@ nav#menu {
 */
 
 
-nav#menu img{
-    width:7%;
+nav#menu img {
+    width: 7%;
     margin-right: 5%;
 }
 
@@ -83,8 +100,8 @@ nav#menu img{
 */
 
 nav#menu li {
-    display: flex; 
-    width: 100%; 
+    display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -862,4 +879,3 @@ ul#dropdown-text.show {
     height: 4.5em;
     width: 4.5em;
 }
-
