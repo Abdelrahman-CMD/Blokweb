@@ -48,6 +48,59 @@ nav:nth-of-type(1) div:nth-of-type(1) img:nth-of-type(2) {
     margin-left: 3.7rem;
 }
 
+
+/* stukje code voor de navigatie als deze uitklapt 
+
+hoe elementen gepositioneerd moeten worden en 
+hoe de donkervlak weergegeven word als deze naar beneden eased
+
+*/
+
+nav#menu {
+    display: flex;
+    flex-wrap: wrap;
+    Justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(21, 21, 21);
+    transform: translateY(-100%);
+    transition: 500ms ease;
+}
+
+/* de margin aan de rechter kant van de iconen en hoe groott ze meoten zijn
+*/
+
+
+nav#menu img{
+    width:7%;
+    margin-right: 5%;
+}
+
+/* de ruimte die de li innemen en de spacebetween voor de ruimte tussen de li en de next icoon
+*/
+
+nav#menu li {
+    display: flex; 
+    width: 100%; 
+    justify-content: space-between;
+}
+
+/* 2e regel code zorgt ervoordat de dropdown menu niet achter mijn image op de detailpagina komt, maar juist voor de image uitklapt*/
+nav#menu.show {
+    transform: translateY(0);
+    z-index: 999999;
+}
+
+/* De kleur van de li*/
+
+
+nav#menu ul li {
+    Color: white;
+}
+
 /* dit is code om de un-orderd list te stylen*/
 nav ul {
     margin-right: auto;
@@ -58,6 +111,7 @@ nav ul {
     font-size: 2em;
     line-height: 2.6rem;
 }
+
 
 /*de nieuwe collectie tekst in de header*/
 div:nth-of-type(1) h1 {
@@ -550,10 +604,12 @@ footer p:nth-of-type(1) {
     width: 5%;
 }
 
+/*dit is styling voor de tekst na de wishlist*/
 #detailpage section:nth-of-type(3) {
     text-align: center;
 }
 
+/*dit is styling voor de tekst na de wishlist*/
 #detailpage section:nth-of-type(3) h3:nth-of-type(1) {
     margin: 3em;
     font-size: 0.9em;
@@ -599,7 +655,7 @@ footer p:nth-of-type(1) {
     margin: 0 auto;
 }
 
-/* styling van de achtergrond van de sectie. ik heb een id gebruikt omdat met pseudo de styling van mijn index.html ging overlappen*/
+/* styling van de sectie 5 na contact us*/
 
 #detailpage section:nth-of-type(5) {
     line-height: 3ch;
@@ -610,7 +666,7 @@ footer p:nth-of-type(1) {
     background: white;
 }
 
-/* de h4 kop moet naar rechts*/
+/* styling van sectie 5 de h4 kop moet naar rechts*/
 
 #detailpage section:nth-of-type(5) div:nth-of-type(1) {
     display: flex;
@@ -619,11 +675,16 @@ footer p:nth-of-type(1) {
     width: 100%;
 }
 
+/* styling van sectie 5 de uiterlijk van h3 wijzigen*/
+
+
 #detailpage section:nth-of-type(5) div:nth-of-type(1) h3 {
     font-size: 0.8em;
     text-transform: uppercase;
     width: 70%;
 }
+
+/* styling van sectie 5 de uiterlijk van de knop*/
 
 #detailpage section:nth-of-type(5) div:nth-of-type(1) button {
     height: 2em;
@@ -633,6 +694,17 @@ footer p:nth-of-type(1) {
     background: white;
 }
 
+/* code voor hoe de text moet uitklappen op de detailpagina*/
+
+ul#dropdown-text.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+}
+
+/* styling van sectie 5 de van de li wijzigen*/
+
 #detailpage section:nth-of-type(5) li {
     list-style-type: none;
     padding-left: 2em;
@@ -640,11 +712,17 @@ footer p:nth-of-type(1) {
     color: black;
 }
 
+/* styling van sectie 5 de hyperlink uiterlijk wijzigen*/
+
+
 #detailpage section:nth-of-type(5) li a {
     list-style-type: none;
     font-size: 1em;
     color: black;
 }
+
+/* styling van sectie 6 de iconen en share op een lijn krijgen met de juiste ruimte er tussen*/
+
 
 #detailpage section:nth-of-type(6) div {
     display: flex;
@@ -654,7 +732,9 @@ footer p:nth-of-type(1) {
     width: 92%;
 }
 
-#detailpage section:nth-of-type(6) div p {
+/* styling van sectie 6 van h3 share om het op een lijn krijgen met de juiste ruimte er tussen*/
+
+#detailpage section:nth-of-type(6) div h3 {
     font-weight: 100;
     font-size: 0.8em;
     color: black;
@@ -662,13 +742,13 @@ footer p:nth-of-type(1) {
     padding: 1em;
 }
 
-/* styling van de grootte van de iconen in sectie 8*/
+/* styling van sectie 6 de grootte van de iconen*/
 
 #detailpage section:nth-of-type(6) div img {
     width: 6.5%;
 }
 
-/* styling van de h3 in sectie 9*/
+/* styling van de h3 in sectie 7*/
 
 
 #detailpage section:nth-of-type(7) h3 {
@@ -678,7 +758,7 @@ footer p:nth-of-type(1) {
     margin-top: 1em;
 }
 
-/* styling van de kleding items naar 2 rijen met een grootte van 50 procent*/
+/* styling van sectie 7 de kleding items naar 2 rijen met een grootte van 50 procent*/
 
 
 #detailpage section:nth-of-type(7) ul:nth-of-type(1) {
@@ -687,7 +767,7 @@ footer p:nth-of-type(1) {
     list-style-type: none;
 }
 
-/* styling van de grootte van de fotos in de list items in sectie 9*/
+/* styling van de grootte van de fotos in de list items in sectie 7*/
 
 
 #detailpage section:nth-of-type(7) ul:nth-of-type(1) li img {
@@ -697,7 +777,7 @@ footer p:nth-of-type(1) {
     list-style-type: none;
 }
 
-/* styling van tekst die hoort bij de list items in sectie 9*/
+/* styling van tekst (naam van de kleding item) die hoort bij de list items in sectie 7*/
 
 #detailpage section:nth-of-type(7) ul h2 {
     padding-top: 2em;
@@ -707,7 +787,7 @@ footer p:nth-of-type(1) {
 
 }
 
-/* styling van tekst die hoort bij de list items in sectie 9*/
+/* styling van tekst (prijs) die hoort bij de list items in sectie 7*/
 
 
 #detailpage section:nth-of-type(7) ul p {
@@ -718,7 +798,7 @@ footer p:nth-of-type(1) {
     font-weight: lighter;
 }
 
-/* styling van de h3 kop van sectie 10*/
+/* styling van de h3 kop van sectie 8 Balr recently viewed*/
 
 #detailpage section:nth-of-type(8) h3 {
     text-align: center;
@@ -726,7 +806,7 @@ footer p:nth-of-type(1) {
     margin-bottom: 1em;
 }
 
-/* styling van de kleding items naar 2 rijen met een grootte van 50 procent*/
+/* styling van de kleding items naar 2 rijen met een grootte van 50 procent in sectie 8*/
 
 
 #detailpage section:nth-of-type(8) ul:nth-of-type(1) {
@@ -735,7 +815,7 @@ footer p:nth-of-type(1) {
     list-style-type: none;
 }
 
-/* styling van de grootte van de fotos in de list items in sectie 9*/
+/* styling van de grootte van de fotos in de list items in sectie 8*/
 
 
 #detailpage section:nth-of-type(8) ul:nth-of-type(1) li img {
@@ -745,7 +825,7 @@ footer p:nth-of-type(1) {
     list-style-type: none;
 }
 
-/* styling van tekst die hoort bij de list items in sectie 9*/
+/* styling van tekst (naam van de kleding item) die hoort bij de list items in sectie 9*/
 
 
 #detailpage section:nth-of-type(8) ul h2 {
@@ -756,7 +836,7 @@ footer p:nth-of-type(1) {
 
 }
 
-/* styling van tekst die hoort bij de list items in sectie 9*/
+/* styling van tekst (prijs) die hoort bij de list items in sectie 9*/
 
 
 #detailpage section:nth-of-type(8) ul p {
@@ -767,7 +847,7 @@ footer p:nth-of-type(1) {
     font-weight: lighter;
 }
 
-/* sectie 11 styling van de hoogte en kleur */
+/* sectie 9 styling van de hoogte en kleur */
 
 
 #detailpage section:nth-of-type(9) {
@@ -781,14 +861,14 @@ footer p:nth-of-type(1) {
 
 }
 
-/* styling van de kop van sectie 11 */
+/* styling van de kop van sectie 9 met de naam become a balr */
 
 #detailpage section:nth-of-type(9) h3 {
     font-weight: 100;
     font-size: 1.6em;
 }
 
-/* sectie 11 styling van de tekst in de tekstvak */
+/* sectie 9 styling van de tekst boven het tekstvak */
 
 #detailpage section:nth-of-type(9) p:nth-of-type(1) {
     line-height: 4em;
@@ -797,7 +877,7 @@ footer p:nth-of-type(1) {
     color: rgb(152, 152, 152);
 }
 
-/* sectie 11 styling van de grootte van de tekstvak*/
+/* sectie 9 styling van de grootte van de tekstvak*/
 
 #detailpage section:nth-of-type(9) input:nth-of-type(1) {
     height: 4.5em;
@@ -807,7 +887,7 @@ footer p:nth-of-type(1) {
     margin-right: -1em;
 }
 
-/* sectie 11 styling van de grootte en kleur van de sumbit knop */
+/* sectie 9 styling van de grootte en kleur van de sumbit knop */
 
 #detailpage section:nth-of-type(9) input:nth-of-type(2) {
     background: black;
@@ -890,51 +970,4 @@ footer p:nth-of-type(1) {
     color: white;
     margin-top: 10em;
     text-align: center;
-}
-
-
-/* stukje code voor de navigatie als deze uitklapt */
-
-
-nav#menu {
-    display: flex;
-    flex-wrap: wrap;
-    Justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgb(21, 21, 21);
-    transform: translateY(-100%);
-    transition: 500ms ease;
-}
-
-
-nav#menu img{
-    width:7%;
-    margin-right: 5%;
-}
-
-nav#menu li {
-    display: flex; 
-    width: 100%; 
-    justify-content: space-between;
-}
-
-/* 2e regel code zorgt ervoordat de dropdown menu niet achter mijn image op de detailpagina komt, maar juist voor de image uitklapt*/
-nav#menu.show {
-    transform: translateY(0);
-    z-index: 999999;
-}
-
-nav#menu ul li {
-    Color: white;
-}
-
-ul#dropdown-text.show {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translateY(-100%);
 }
