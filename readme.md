@@ -30,6 +30,9 @@ Bijgaand alle bronnen die ik gebruikt of deels benut heb als inspiratie heb tijd
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let **Code voor het gebruiken van let**
 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations **Code voor animatie**
+
+
 ## Eindgesprek (week 7/8)
 
 -dit ging goed & dit was lastig-
