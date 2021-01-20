@@ -28,7 +28,7 @@ Bijgaand alle bronnen die ik gebruikt of deels benut heb als inspiratie heb tijd
 - [https://css-tricks.com/almanac/properties/s/scroll-snap-type/](https://css-tricks.com/almanac/properties/s/scroll-snap-type/) **Code omtrent de manier waarop de slider werkt.**
 - [https://freefrontend.com/css-radio-buttons/](https://freefrontend.com/css-radio-buttons/) **Code voor het maken van de size labels**
 
-
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let **Code voor het gebruiken van let**
 
 ## Eindgesprek (week 7/8)
 
