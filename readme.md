@@ -32,6 +32,8 @@ Bijgaand alle bronnen die ik gebruikt of deels benut heb als inspiratie heb tijd
 
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations **Code voor animatie**
 
+- https://codepen.io/chriscoyier/pen/XwbNwX **Code voor de slider**
+
 
 ## Eindgesprek (week 7/8)
 
